@@ -1,0 +1,45 @@
+# Auto-detect text files and normalize line endings
+* text=auto
+
+# Python files
+*.py text diff=python
+*.pyx text
+*.pxd text
+*.pxi text
+
+# Shell scripts
+*.sh text eol=lf
+*.bash text eol=lf
+
+# Batch files
+*.bat text eol=crlf
+*.cmd text eol=crlf
+
+# Markup and config
+*.md text diff=markdown
+*.rst text
+*.toml text
+*.yaml text
+*.yml text
+*.json text
+*.cfg text
+*.ini text
+*.txt text
+
+# Git files
+.gitattributes text
+.gitignore text
+
+# Binaries
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.pdf binary
+*.zip binary
+*.tar.gz binary
+
+# Lock files
+poetry.lock    -diff
+Pipfile.lock   -diff
